@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -15,8 +16,8 @@
       "es2017",
       "dom"
     ],
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true
   },
   "exclude": [
     "wallabyTest.ts"

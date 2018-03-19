@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module';
 // layout module
 import { LayoutModule } from './layout/layout.module';
+// auth module
+import { AuthModule } from 'app/auth/auth.module';
 // eager feature module
 import { FeatureEagerModule } from './feature-eager/feature-eager.module';
 // app routing
 import { AppRoutingModule, routingComponents } from './app.routing';
 // app component
 import { AppComponent } from './app.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,8 +22,9 @@ import { AppComponent } from './app.component';
   imports: [
     CoreModule,
     LayoutModule,
+    AuthModule,
     FeatureEagerModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

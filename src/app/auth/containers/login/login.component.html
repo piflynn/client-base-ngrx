@@ -1,0 +1,11 @@
+<section fxLayoutAlign="center" fxLayoutGap="1rem">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutGap="1rem" novalidate autocomplete="off" spellcheck="false">
+    <mat-form-field>
+      <input matInput formControlName="username" placeholder="Username" type="text">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="password" placeholder="Password" type="password">
+    </mat-form-field>
+    <button mat-raised-button color="accent" [disabled]="loginForm.invalid" type="submit">LOGIN</button>
+  </form>
+</section>

@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListComponent } from './list/list.component';
+import { ListComponent } from './containers/list/list.component';
 
 const routes: Routes = [
   {
     path: 'eager',
-    component: ListComponent
+    component: ListComponent,
+    data: { title: 'Eager'}
   }
 ];
 
